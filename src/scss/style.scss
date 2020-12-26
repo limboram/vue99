@@ -312,6 +312,13 @@ iframe {
     }
 }
 
+//container
+.container {
+    width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 //main
 #mainCont {
     background-color: $color-black;
@@ -335,5 +342,68 @@ iframe {
         background-color: #fff;
         color: #000;
         display: inline-block;
+    }
+}
+
+//about
+.aboutCont {
+
+    > div {
+        font-size: 1.2rem;
+        font-family: $font-korea-main;
+
+        h2 {
+            font-family: $font-korea-main;
+            font-size: 1.2rem;
+            margin : {
+                top: 60px;
+                bottom: 30px;
+            }
+        }
+        p {
+            line-height: 1.5;
+            margin-bottom: 350px;
+        }
+    }
+
+    > div:nth-child(1) {
+
+        .aiLift {
+            width: 100%;
+        }
+        .aiRight {
+            width: 60%;
+        }
+    }
+    > div:nth-child(2){
+        display: flex;
+        margin-bottom: 350px;
+
+        .aiLeft {
+            flex: 1 1 70%
+        }
+        .aiRight {
+            flex: 1 1 40%;
+            margin-left: 5%;
+        }
+        h2 {
+            margin-top: 0;
+        }
+    }
+    > div:nth-child(3) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 350px;
+
+        .aiLift {
+            flex: 0 0 56%;
+        }
+        .aiRight {
+            flex: 0 0 42%;
+        }
+        h2 {
+            margin-top: 0;
+        }
     }
 }
